@@ -47,20 +47,25 @@ nav a{
     display: inline-block;
     font-size: 16px;
     text-align: center;
-    font-family: 'Bungee', cursive;
     width: 100%;
     padding-bottom: 10px;
+    padding-top: 10px;
     margin: auto;
     color: #c1272f;
     text-decoration: none;
+    text-shadow: 2px 2px white;
+    background-image: url(Images/back.jpg);
+    background-size: cover;
+
 }
 nav {
     display: grid;
     color: #c1272f;
     font-weight: bold;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: white;
-    padding-top: 10px;
+    background-color: rgba(0,0,0, 0.4);
+    padding: 0px 3px 3px 3px;
+    grid-gap: 3px;
 }
 
 /* AANDUIDING Actieve Pagina */
@@ -75,6 +80,7 @@ nav {
 main {
     background-color: rgba(0,0,0, 0.4);
     padding: 3px;
+    margin-bottom: 32px;
 }
 
 /* INDEX */
@@ -82,7 +88,7 @@ main {
 .index-main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0px;
+    grid-gap: 3px;
 }
 
 .index-main div {
@@ -93,12 +99,16 @@ main {
 #uitleg {
     padding: 5%;
     width: 90%;
+    line-height: 22px;
+    
 }
+
 
 h1 {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .index-main div a {
@@ -226,6 +236,10 @@ h1 {
     padding: 5px;
     font-size: 12px;
     line-height: 20px;
+    position: relative;
+    top: 4px;
+    font-weight: bold;
+    border-left: 2px solid #c1272f;
 }
 
 .portf-item::before {
@@ -290,6 +304,7 @@ h1 {
 
 #bert-text {
     padding: 20px;
+    line-height: 22px;
 }
 
     #klj-klein {
@@ -308,12 +323,30 @@ h1 {
 
 /* CONTACT */
 
+#txtContact {
+    background-color: white;
+    height: 250px;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#txtContact h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
 /* => Footer */
 
 footer {
     width: 100%;
     max-width: 1200px;
     background-color: white;
+    background-image: url(Images/back.jpg);
+    background-size: cover;
+    position: fixed;
+    bottom: 0px;
 }
 
 footer div {
@@ -481,6 +514,10 @@ footer p {
     
     .index-main div a {
         padding-top: 300px;
+    }
+    
+    #uitleg h1 {
+        font-size: 30px;
     }
     
     /* PORTFOLIO */
